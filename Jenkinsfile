@@ -25,19 +25,8 @@ pipeline {
     }
 
     stage('Deploy') {
-      parallel {
-        stage('Deploy') {
-          steps {
-            echo 'Deployment Complited'
-          }
-        }
-
-        stage('check') {
-          steps {
-            echo 'wwww'
-          }
-        }
-
+      steps {
+        echo 'Deployment Complited'
       }
     }
 
